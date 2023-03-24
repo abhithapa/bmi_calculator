@@ -3,7 +3,6 @@ import 'package:bmi_calculator/provider/firebase_provider.dart';
 import 'package:bmi_calculator/screens/home_page.dart';
 import 'package:bmi_calculator/widgets/custom_textfield.dart';
 import 'package:bot_toast/bot_toast.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -99,7 +98,7 @@ class LoginScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SignUpScreen()));
+                                  builder: (context) => SignupScreen()));
                         },
                         child: Text('Sign Up',
                             style: TextStyle(color: Colors.white70)),
